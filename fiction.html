@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiction | Rafael Pogosian</title>
+  <meta
+    name="description"
+    content="Fiction books and reading notes by Rafael Pogosian."
+  >
+  <style>
+    :root {
+      --bg: #F2F0E7;
+      --card: #FAF8F1;
+      --text: #1E211B;
+      --muted: #6F7668;
+      --accent: #7C8B6F;
+      --accent-soft: #D6DDC8;
+    }
+
+    a:hover,
+    a:focus-visible,
+    a:active {
+      color: var(--accent) !important;
+    }
+  </style>
+</head>
+<body style="margin: 0; background-color: var(--bg); color: var(--text); font-family: Georgia, serif; line-height: 1.5;">
+  <main style="padding: 48px 24px 72px 24px;">
+    <div style="width: 100%; max-width: 1100px; margin: 0 auto;">
+      <header style="margin-bottom: 56px; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 24px 40px;">
+        <h1 style="font-size: clamp(2.35rem, 7vw, 3.8rem); line-height: 0.95; margin: 0; text-align: left;">
+          <a href="index.html" style="color: var(--text); text-decoration: none;">Un Rat De<br>Bibliotheque</a>
+        </h1>
+        <nav aria-label="Main navigation" style="padding-top: 10px; flex: 0 1 520px;">
+          <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(140px, 1fr)); row-gap: 20px; column-gap: 30px; font-size: 1.14rem;">
+            <li><a href="my-journey-into-the-world-of-reading.html" style="color: var(--text);">ABOUT</a></li>
+            <li><a href="news.html" style="color: var(--text);">NEWS</a></li>
+            <li><a href="fiction.html" style="color: var(--text);">FICTION</a></li>
+            <li><a href="non-fiction.html" style="color: var(--text);">NON FICTION</a></li>
+            <li><a href="tbr-list.html" style="color: var(--text);">MY TBR LIST</a></li>
+            <li><a href="monthly-updates.html" style="color: var(--text);">MONTHLY UPDATES</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section aria-labelledby="search-heading" style="margin-bottom: 40px; max-width: 760px;">
+        <h2 id="search-heading" style="font-size: 1.5rem; margin: 0 0 14px 0;">Have a book on mind?</h2>
+        <label for="book-search" style="display: block; max-width: 460px;">
+          <span style="position: absolute; left: -9999px;">Search by book title</span>
+          <input id="book-search" type="search" placeholder="Search by title" style="width: 100%; box-sizing: border-box; padding: 14px 18px; border: 1px solid var(--accent-soft); background-color: var(--card); color: var(--text); font: inherit;">
+        </label>
+        <p id="search-status" aria-live="polite" style="margin: 14px 0 0 0; min-height: 24px; color: var(--muted);"></p>
+        <ul id="search-results" aria-label="Search results" style="list-style: none; padding: 0; margin: 16px 0 0 0; max-width: 520px; display: grid; gap: 10px; text-align: left;"></ul>
+      </section>
+
+      <section id="fiction" aria-labelledby="fiction-title" style="padding: 28px; border: 1px solid var(--accent-soft); background-color: var(--card); text-align: left; max-width: 760px;">
+        <h2 id="fiction-title" style="margin: 0 0 18px 0; font-size: 1.6rem;">FICTION</h2>
+        <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 14px;">
+<li data-book-item data-book-title="The Stranger by Albert Camus" data-book-category="FICTION">
+<a href="the-stranger.html" style="color: var(--text);"> The Stranger by Albert Camus</a>
+</li>
+          <li data-book-item data-book-title="Nineteen Eighty-Four by George Orwell" data-book-category="FICTION">
+            <a href="#fiction-nineteen-eighty-four" style="color: var(--text);">Nineteen Eighty-Four by George Orwell</a>
+          </li>
+          <li data-book-item data-book-title="Fahrenheit 451 by Ray Bradbury" data-book-category="FICTION">
+            <a href="fahrenheit-451.html" style="color: var(--text);">Fahrenheit 451 by Ray Bradbury</a>
+          </li>
+          <li data-book-item data-book-title="The Trial by Franz Kafka" data-book-category="FICTION">
+            <a href="#fiction-the-trial" style="color: var(--text);">The Trial by Franz Kafka</a>
+          </li>
+          <li data-book-item data-book-title="A Sound Of Thunder by Rad Bradbury" data-book-category="FICTION">
+            <a href="#fiction-a-sound-of-thunder" style="color: var(--text);">A Sound Of Thunder by Rad Bradbury</a>
+          </li>
+          <li data-book-item data-book-title="Siddhartha by Hermann Hesse" data-book-category="FICTION">
+            <a href="#fiction-siddhartha" style="color: var(--text);">Siddhartha by Hermann Hesse</a>
+          </li>
+          <li data-book-item data-book-title="11/22/63 by Steven King" data-book-category="FICTION">
+            <a href="11-22-63.html" style="color: var(--text);">11/22/63 by Steven King</a>
+          </li>
+          <li data-book-item data-book-title="Rita Hayworth and Shawshank Redemption by Steven King" data-book-category="FICTION">
+  <a href="rita-hayworth-and-shawshank-redemption.html" style="color: var(--text);">
+    Rita Hayworth and Shawshank Redemption by Steven King
+  </a>
+</li>
+          <li data-book-item data-book-title="Animal Farm by George Orwell" data-book-category="FICTION">
+            <a href="#fiction-animal-farm" style="color: var(--text);">Animal Farm by George Orwell</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const searchInput = document.getElementById('book-search');
+    const searchStatus = document.getElementById('search-status');
+    const searchResults = document.getElementById('search-results');
+    const searchItems = [
+      { title: 'The Stranger by Albert Camus', category: 'FICTION', href: '#the-stranger.html' },
+      { title: 'Nineteen Eighty-Four by George Orwell', category: 'FICTION', href: '#fiction-nineteen-eighty-four' },
+      { title: 'Fahrenheit 451 by Ray Bradbury', category: 'FICTION', href: 'fahrenheit-451.html' },
+      { title: 'The Trial by Franz Kafka', category: 'FICTION', href: '#fiction-the-trial' },
+      { title: 'A Sound Of Thunder by Rad Bradbury', category: 'FICTION', href: '#fiction-a-sound-of-thunder' },
+      { title: 'Siddhartha by Hermann Hesse', category: 'FICTION', href: '#fiction-siddhartha' },
+      { title: '11/22/63 by Steven King', category: 'FICTION', href: '11-22-63.html' },
+      { title: 'Rita Hayworth and Shawshank Redemption by Steven King', category: 'FICTION', href: 'rita-hayworth-and-shawshank-redemption.html' },
+      { title: 'Animal Farm by George Orwell', category: 'FICTION', href: '#fiction-animal-farm' },
+      { title: 'Liminal Thinking by Dave Gray', category: 'NON FICTION', href: 'non-fiction.html#non-fiction-liminal-thinking' },
+      { title: 'Essentialism The Disciplined Pursuit Of Less by Greg McKeown', category: 'NON FICTION', href: 'non-fiction.html#non-fiction-essentialism' },
+      { title: 'Sapiens: A Brief History Of Humankind by Yuval Noah Harari', category: 'NON FICTION', href: 'non-fiction.html#non-fiction-sapiens' },
+      { title: 'Influence: The Psychology of Persuasion by Robert Chaldini', category: 'NON FICTION', href: 'non-fiction.html#non-fiction-influence' },
+      { title: 'Apology by Plato', category: 'NON FICTION', href: 'non-fiction.html#non-fiction-apology' },
+      { title: 'Euthyphro by Plato', category: 'NON FICTION', href: 'non-fiction.html#non-fiction-euthyphro' },
+      { title: 'Under The Dome by Steven King', category: 'MY TBR LIST', href: 'tbr-list.html#under-the-dome' },
+      { title: 'The Shining by Steven King', category: 'MY TBR LIST', href: 'tbr-list.html#the-shining' },
+      { title: 'The Institute by Steven King', category: 'MY TBR LIST', href: 'tbr-list.html#the-institute' },
+      { title: 'The Catcher In The Rye by J. Salinger', category: 'MY TBR LIST', href: 'tbr-list.html#the-catcher-in-the-rye' },
+      { title: 'Dandelion Wine by Ray Bradbury', category: 'MY TBR LIST', href: 'tbr-list.html#dandelion-wine' },
+      { title: 'Brave New World by Aldous Huxley', category: 'MY TBR LIST', href: 'tbr-list.html#brave-new-world' },
+      { title: 'On Writing by Steven King', category: 'MY TBR LIST', href: 'tbr-list.html#on-writing' },
+      { title: 'Books I read in February 2026', category: 'MONTHLY UPDATES', href: 'monthly-updates.html#monthly-update-february-2026' },
+      { title: 'Books I read in March 2026', category: 'MONTHLY UPDATES', href: 'monthly-updates.html#monthly-update-march-2026' },
+      { title: 'Books I read in April 2026', category: 'MONTHLY UPDATES', href: 'monthly-updates.html#monthly-update-april-2026' }
+    ];
+    const bookItems = Array.from(document.querySelectorAll('[data-book-item]'));
+
+    function updateSearch() {
+      const query = searchInput.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      bookItems.forEach((item) => {
+        const title = item.getAttribute('data-book-title').toLowerCase();
+        const category = item.getAttribute('data-book-category').toLowerCase();
+        const matches = !query || title.includes(query) || category.includes(query);
+        item.style.display = matches ? '' : 'none';
+        if (matches) visibleCount += 1;
+      });
+
+      if (!query) {
+        searchStatus.textContent = 'Search across fiction, non-fiction, TBR, and monthly updates.';
+        searchResults.innerHTML = '';
+        return;
+      }
+
+      const matchingItems = searchItems.filter((item) => {
+        const title = item.title.toLowerCase();
+        const category = item.category.toLowerCase();
+        return title.includes(query) || category.includes(query);
+      });
+
+      visibleCount = matchingItems.length;
+      searchStatus.textContent = visibleCount
+        ? 'Found ' + visibleCount + ' matching result' + (visibleCount === 1 ? '.' : 's.')
+        : 'No matching books yet.';
+
+      searchResults.innerHTML = matchingItems.map((item) => {
+        return '<li style="padding: 12px 14px; border: 1px solid var(--accent-soft); background-color: var(--card);">' +
+          '<a href="' + item.href + '" style="color: var(--text);">' + item.title + '</a>' +
+          '<div style="margin-top: 4px; font-size: 0.95rem; color: var(--muted);">' + item.category + '</div>' +
+        '</li>';
+      }).join('');
+    }
+
+    searchInput.addEventListener('input', updateSearch);
+    updateSearch();
+  </script>
+</body>
+</html>
