@@ -1,0 +1,117 @@
+@media (max-width: 760px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    padding: 26px 14px 48px !important;
+  }
+
+  main > div {
+    max-width: 100% !important;
+  }
+
+  header {
+    margin-bottom: 34px !important;
+    display: block !important;
+    text-align: center !important;
+  }
+
+  h1 {
+    font-size: clamp(2.05rem, 15vw, 3.2rem) !important;
+    line-height: 0.98 !important;
+    text-align: center !important;
+    overflow-wrap: anywhere;
+  }
+
+  header p {
+    margin-top: 14px !important;
+  }
+
+  nav {
+    max-width: 100% !important;
+    margin: 28px auto 32px !important;
+    padding-top: 0 !important;
+    flex: none !important;
+  }
+
+  nav ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px 16px !important;
+    font-size: 1rem !important;
+    text-align: center !important;
+  }
+
+  nav a {
+    display: inline-block;
+    line-height: 1.2;
+  }
+
+  .books-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 28px 14px !important;
+  }
+
+  .book-cover {
+    border-radius: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .book-card:hover .book-cover {
+    transform: none !important;
+  }
+
+  .book-title {
+    font-size: 0.94rem !important;
+    line-height: 1.28 !important;
+    overflow-wrap: anywhere;
+  }
+
+  section[aria-labelledby],
+  article {
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 18px !important;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  article img {
+    float: none !important;
+    display: block !important;
+    width: min(220px, 72vw) !important;
+    max-width: 100% !important;
+    margin: 0 auto 20px !important;
+  }
+
+  input[type="search"] {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  main {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  nav ul {
+    gap: 12px 10px !important;
+    font-size: 0.94rem !important;
+  }
+
+  .books-grid {
+    gap: 24px 12px !important;
+  }
+
+  .book-title {
+    font-size: 0.88rem !important;
+  }
+}
