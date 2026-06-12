@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Pogosian</title>
+  <meta
+    name="description"
+    content="A personal reading blog by Rafael Pogosian with fiction, non-fiction, reading plans, and book notes."
+  >
+  <style>
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 34px 22px;
+      align-items: start;
+    }
+
+    .book-card {
+      display: block;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .book-card:hover .book-cover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 34px color-mix(in srgb, var(--text) 22%, transparent);
+    }
+
+    .book-cover {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      display: block;
+      border-radius: 14px;
+      border: 1px solid var(--accent-soft);
+      box-shadow: 0 14px 28px color-mix(in srgb, var(--text) 16%, transparent);
+      background: var(--card);
+      transition: transform 180ms ease, box-shadow 180ms ease;
+      margin-bottom: 12px;
+    }
+
+    .book-title {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    @media (max-width: 1000px) {
+      .books-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 820px) {
+      .books-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 580px) {
+      .books-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px 16px;
+      }
+
+      .book-title {
+        font-size: 0.96rem;
+      }
+    }
+  </style>
+  <style>
+    :root {
+      --bg: #F2F0E7;
+      --card: #FAF8F1;
+      --text: #1E211B;
+      --muted: #6F7668;
+      --accent: #7C8B6F;
+      --accent-soft: #D6DDC8;
+    }
+
+    a:hover,
+    a:focus-visible,
+    a:active {
+      color: var(--accent) !important;
+    }
+  </style>
+</head>
+<body style="margin: 0; background-color: var(--bg); color: var(--text); font-family: Georgia, serif; line-height: 1.5;">
+  <main style="padding: 48px 24px 72px 24px;">
+    <div style="width: 100%; max-width: 1100px; margin: 0 auto;">
+      <header style="margin-bottom: 56px; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 24px 40px;">
+        <h1 style="font-size: clamp(2.35rem, 7vw, 3.8rem); line-height: 0.95; margin: 0; text-align: left;">
+          Un Rat De<br>Bibliotheque
+        </h1>
+        <nav aria-label="Main navigation" style="padding-top: 10px; flex: 0 1 520px;">
+          <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(140px, 1fr)); row-gap: 20px; column-gap: 30px; font-size: 1.41rem;">
+            <li><a href="my-journey-into-the-world-of-reading.html" style="color: var(--text);">ABOUT</a></li>
+            <li><a href="news.html" style="color: var(--text);">NEWS</a></li>
+            <li><a href="fiction.html" style="color: var(--text);">FICTION</a></li>
+            <li><a href="non-fiction.html" style="color: var(--text);">NON FICTION</a></li>
+            <li><a href="tbr-list.html" style="color: var(--text);">MY TBR LIST</a></li>
+            <li><a href="monthly-updates.html" style="color: var(--text);">MONTHLY UPDATES</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section aria-label="Books library">
+        <div class="books-grid">
+          <a class="book-card" href="fahrenheit-451.html" aria-label="Open review for Fahrenheit 451 by Ray Bradbury">
+            <img class="book-cover" src="images/fahrenheit-451.jpg" alt="Fahrenheit 451 by Ray Bradbury cover">
+            <p class="book-title">Fahrenheit 451 by Ray Bradbury</p>
+          </a>
+
+          <a class="book-card" href="fiction.html#fiction-nineteen-eighty-four" aria-label="Open review for 1984 by George Orwell">
+            <img class="book-cover" src="images/1984.jpg" alt="1984 by George Orwell cover">
+            <p class="book-title">1984 by George Orwell</p>
+          </a>
+
+          <a class="book-card" href="tbr-list.html" aria-label="Open entry for Invisible Man by Herbert Wells">
+            <img class="book-cover" src="images/invisible-man.jpg" alt="Invisible Man by Herbert Wells cover">
+            <p class="book-title">Invisible Man by Herbert Wells</p>
+          </a>
+
+          <a class="book-card" href="11-22-63.html" aria-label="Open review for 11/22/63 by Stephen King">
+            <img class="book-cover" src="images/11-22-63.jpg" alt="11/22/63 by Stephen King cover">
+            <p class="book-title">11/22/63 by Stephen King</p>
+          </a>
+
+          <a class="book-card" href="fiction.html#fiction-animal-farm" aria-label="Open review for Animal Farm by George Orwell">
+            <img class="book-cover" src="images/animal-farm.jpg" alt="Animal Farm by George Orwell cover">
+            <p class="book-title">Animal Farm by George Orwell</p>
+          </a>
+
+          <a class="book-card" href="five-dialogues-by-plato.html" aria-label="Open review for Five Dialogues by Plato">
+            <img class="book-cover" src="images/five-dialogues-by-plato.jpg" alt="Five Dialogues by Plato cover">
+            <p class="book-title">Five Dialogues by Plato</p>
+          </a>
+
+          <a class="book-card" href="essentialism.html" aria-label="Open review for Essentialism by Greg McKeown">
+            <img class="book-cover" src="images/essentialism.jpg" alt="Essentialism by Greg McKeown cover">
+            <p class="book-title">Essentialism by Greg McKeown</p>
+          </a>
+
+          <a class="book-card" href="non-fiction.html#non-fiction-liminal-thinking" aria-label="Open review for Liminal Thinking by Dave Gray">
+            <img class="book-cover" src="images/liminal-thinking.jpg" alt="Liminal Thinking by Dave Gray cover">
+            <p class="book-title">Liminal Thinking by Dave Gray</p>
+          </a>
+
+          <a class="book-card" href="non-fiction.html#non-fiction-sapiens" aria-label="Open review for Sapiens by Yuval Noah Harari">
+            <img class="book-cover" src="images/sapiens.jpg" alt="Sapiens by Yuval Noah Harari cover">
+            <p class="book-title">Sapiens by Yuval Noah Harari</p>
+          </a>
+
+          <a class="book-card" href="tbr-list.html#shogun" aria-label="Open entry for Shogun by James Clavell">
+            <img class="book-cover" src="images/shogun.jpg" alt="Shogun by James Clavell cover">
+            <p class="book-title">Shogun by James Clavell</p>
+          </a>
+
+          <a class="book-card" href="fiction.html#fiction-siddhartha" aria-label="Open review for Siddhartha by Hermann Hesse">
+            <img class="book-cover" src="images/siddhartha.jpg" alt="Siddhartha by Hermann Hesse cover">
+            <p class="book-title">Siddhartha by Hermann Hesse</p>
+          </a>
+
+          <a class="book-card" href="tbr-list.html#the-catcher-in-the-rye" aria-label="Open entry for The Catcher In The Rye by Jerome Salinger">
+            <img class="book-cover" src="images/the-catcher-in-the-rye.jpg" alt="The Catcher In The Rye by Jerome Salinger cover">
+            <p class="book-title">The Catcher In The Rye by Jerome Salinger</p>
+          </a>
+
+          <a class="book-card" href="tbr-list.html#dandelion-wine" aria-label="Open entry for Dandelion Wine by Ray Bradbury">
+            <img class="book-cover" src="images/dandelion-wine.jpg" alt="Dandelion Wine by Ray Bradbury cover">
+            <p class="book-title">Dandelion Wine by Ray Bradbury</p>
+          </a>
+
+          <a class="book-card" href="tbr-list.html#brave-new-world" aria-label="Open entry for Brave New World by Aldous Huxley">
+            <img class="book-cover" src="images/brave-new-world.jpg" alt="Brave New World by Aldous Huxley cover">
+            <p class="book-title">Brave New World by Aldous Huxley</p>
+          </a>
+
+          <a class="book-card" href="the-institute.html" aria-label="Open entry for The Institute by Stephen King">
+            <img class="book-cover" src="images/the-institute.jpg" alt="The Institute by Stephen King cover">
+            <p class="book-title">The Institute by Stephen King</p>
+          </a>
+
+          <a class="book-card" href="tbr-list.html#the-shining" aria-label="Open entry for The Shining by Stephen King">
+            <img class="book-cover" src="images/the-shining.jpg" alt="The Shining by Stephen King cover">
+            <p class="book-title">The Shining by Stephen King</p>
+          </a>
+
+          <a class="book-card" href="fiction.html#fiction-the-trial" aria-label="Open review for The Trial by Franz Kafka">
+            <img class="book-cover" src="images/the-trial.jpg" alt="The Trial by Franz Kafka cover">
+            <p class="book-title">The Trial by Franz Kafka</p>
+          </a>
+
+          <a class="book-card" href="the-stranger.html" aria-label="Open review for The Stranger by Albert Camus">
+            <img class="book-cover" src="images/the-stranger-by-albert-camus.jpg" alt="The Stranger by Albert Camus cover">
+            <p class="book-title">The Stranger by Albert Camus</p>
+          </a>
+
+          <a class="book-card" href="tbr-list.html#under-the-dome" aria-label="Open entry for Under The Dome by Stephen King">
+            <img class="book-cover" src="images/under-the-dome.jpg" alt="Under The Dome by Stephen King cover">
+            <p class="book-title">Under The Dome by Stephen King</p>
+          </a>
+
+          <a class="book-card" href="rita-hayworth-and-shawshank-redemption.html" aria-label="Open review for Rita Hayworth and Shawshank Redemption by Stephen King">
+            <img class="book-cover" src="images/rita-hayworth-and-shawshank-redemption.jpg" alt="Rita Hayworth and Shawshank Redemption by Stephen King cover">
+            <p class="book-title">Rita Hayworth and Shawshank Redemption by Stephen King</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
